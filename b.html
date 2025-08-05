@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>떡볶이 메뉴 상세 - 국대떡볶이</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Pretendard', sans-serif; }
+    body { background: #fff; color: #333; line-height: 1.6; }
+    header { background: #D62828; color: #fff; padding: 30px 0; text-align: center; }
+    header h1 { font-size: 2.2rem; }
+
+    section { max-width: 1200px; margin: 60px auto; padding: 0 20px; }
+    h2 { font-size: 2rem; margin-bottom: 30px; text-align: center; }
+
+    .menu-item {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 60px;
+      align-items: center;
+      gap: 40px;
+    }
+    .menu-item img {
+      flex: 1;
+      min-width: 300px;
+      max-width: 500px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .menu-text {
+      flex: 1;
+      min-width: 280px;
+    }
+    .menu-text h3 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+    .menu-text p {
+      font-size: 1rem;
+      color: #555;
+      margin-bottom: 10px;
+    }
+    .menu-meta {
+      font-size: 0.9rem;
+      color: #777;
+      margin-top: 10px;
+    }
+    .menu-meta span {
+      display: inline-block;
+      margin-right: 15px;
+    }
+
+    .map-section {
+      background: #f9f9f9;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .map-section h2 {
+      margin-bottom: 20px;
+    }
+    .map-section p {
+      color: #555;
+      margin-bottom: 30px;
+    }
+    .map-section img {
+      width: 100%;
+      max-width: 800px;
+      border-radius: 10px;
+    }
+
+    .review-section {
+      padding: 60px 20px;
+      background-color: #fdf2f2;
+      border-top: 1px solid #eee;
+    }
+    .review-section h2 {
+      margin-bottom: 30px;
+    }
+    .review {
+      background-color: #fff;
+      border: 1px solid #eee;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+    .review strong {
+      display: block;
+      margin-bottom: 10px;
+      color: #D62828;
+    }
+    .review p {
+      font-size: 0.95rem;
+      color: #444;
+    }
+
+    footer {
+      background-color: #222;
+      color: #ccc;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      margin-top: 60px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>떡볶이 메뉴 상세</h1>
+    <p>우리 브랜드의 대표 떡볶이들을 소개합니다</p>
+  </header>
+
+  <section>
+    <h2>1. 국물떡볶이</h2>
+    <div class="menu-item">
+      <img src="img/국대떡볶이.jpg" alt="국물떡볶이">
+      <div class="menu-text">
+        <h3>국물떡볶이</h3>
+        <p>가장 기본에 충실한 전통 국물떡볶이입니다. 깊고 진한 국물 맛이 일품이며, 남녀노소 모두에게 사랑받는 국대떡볶이의 시그니처 메뉴입니다.</p>
+        <div class="menu-meta">
+          <span>가격: 4,500원</span>
+          <span>칼로리: 480kcal</span>
+          <span>매운맛: 🌶️🌶️</span>
+        </div>
+      </div>
+    </div>
+
+    <h2>2. 치즈떡볶이</h2>
+    <div class="menu-item">
+      <img src="img/치즈떡볶이.jpg" alt="치즈떡볶이">
+      <div class="menu-text">
+        <h3>치즈떡볶이</h3>
+        <p>쭉 늘어나는 치즈가 듬뿍 올라간 치즈떡볶이는 고소함과 매콤함의 완벽한 조화를 이룹니다. 특히 MZ세대에게 큰 인기를 끌고 있는 메뉴입니다.</p>
+        <div class="menu-meta">
+          <span>가격: 5,000원</span>
+          <span>칼로리: 550kcal</span>
+          <span>매운맛: 🌶️🌶️</span>
+        </div>
+      </div>
+    </div>
+
+    <h2>3. 마라떡볶이</h2>
+    <div class="menu-item">
+      <img src="img/마라떡볶이.png" alt="마라떡볶이">
+      <div class="menu-text">
+        <h3>마라떡볶이</h3>
+        <p>마라의 얼얼한 매운맛을 그대로 살린 메뉴로, 마니아층을 겨냥한 특별한 떡볶이입니다. 한 번 빠지면 헤어나올 수 없는 중독성 있는 맛!</p>
+        <div class="menu-meta">
+          <span>가격: 5,500원</span>
+          <span>칼로리: 600kcal</span>
+          <span>매운맛: 🌶️🌶️🌶️🌶️</span>
+        </div>
+      </div>
+    </div>
+
+    <h2>4. 로제떡볶이</h2>
+    <div class="menu-item">
+      <img src="img/로제떡볶이.jpg" alt="로제떡볶이">
+      <div class="menu-text">
+        <h3>로제떡볶이</h3>
+        <p>고소한 크림과 매콤한 떡볶이 소스가 어우러진 부드럽고 매력적인 메뉴입니다. SNS 인증샷 필수! 비주얼과 맛 모두를 만족시키는 인기 메뉴입니다.</p>
+        <div class="menu-meta">
+          <span>가격: 5,800원</span>
+          <span>칼로리: 620kcal</span>
+          <span>매운맛: 🌶️🌶️</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="review-section">
+    <h2>실제 이용자 리뷰</h2>
+    <div class="review">
+      <strong>김민지 (20대)</strong>
+      <p>로제떡볶이 진짜 맛있어요! 매콤한데 부드럽고, 비주얼도 대박이라 친구랑 사진도 엄청 찍었어요.</p>
+    </div>
+    <div class="review">
+      <strong>이재훈 (30대)</strong>
+      <p>마라떡볶이 매운 거 좋아하는 저에겐 최고의 선택이었습니다. 중독적인 맛이에요!</p>
+    </div>
+    <div class="review">
+      <strong>최수정 (40대)</strong>
+      <p>치즈떡볶이 아이들이 너무 좋아해요. 가족끼리 자주 시켜 먹습니다.</p>
+    </div>
+  </section>
+
+  <section class="map-section">
+    <h2>전국 매장 찾기</h2>
+    <p>가장 가까운 국대떡볶이 매장을 확인해보세요!</p>
+    <img src="img/몰/매장찾기.png" alt="매장 찾기 지도 예시">
+  </section>
+
+  <footer>
+    <p>&copy; 2025 국대떡볶이. All rights reserved.</p>
+  </footer>
+</body>
+</html>
